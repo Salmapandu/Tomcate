@@ -1,0 +1,122 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  .SP{
+    text-align: center;
+    color: rgb(119, 0, 255);
+    font-style: italic;
+    
+  }
+  body {
+      
+    background-image: url('pp.jpg');
+    background-repeat: no-repeat;
+    background-size: center;
+    background-color: chartreuse;
+    
+  
+
+  }
+  .WE {
+    text-align: center;
+    color: rgb(255, 0, 119);
+
+  }
+  .po {
+    text-align: center;
+    color: rgb(89, 0, 255);
+
+  }
+  
+  main {
+    width: 50%;
+    margin: 15px auto 0;
+  }
+  
+  #CustomerForm input[name="name"] {
+    grid-area: name;
+  }
+  
+  #CustomerForm input[name="age"] {
+    grid-area: age;
+  }
+  
+  #CustomerForm input[name="roll"] {
+    grid-area: roll;
+  }
+  
+  #CustomerForm button {
+    grid-area: button;
+  }
+  
+  #CustomerForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "name name"
+      "age "
+      "button button";
+  }
+  
+  #CustomerForm * {
+    margin: 4px;
+    padding: 2px;
+    font-size: 0.5rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  #CustomerForm button {
+    outline: none;
+    color: rgb(78, 42, 162);
+
+    border: 5px solid transparent;
+    cursor: pointer;
+  }
+  #CustomerForm button:hover {
+    background-color: #289d53;
+ 
+  }  
+    #CustomerForm input {
+    outline: none;
+  }
+   
+ #CustomerForm input:hover {
+    border: 3px solid #6c86bb;
+  }
+    
+  #CustomerForm input:focus {
+    border: 3px solid #367bfa;
+  }
+  
+  #CustomerForm button:active {
+    border-color: #367bfa;
+  }
+  
+  . .Customer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid gray;
+    background-color: #ebebeb;
+    color: gray;
+    border-radius: 15px;
+  }
+  
+  .Customer div {
+    width: 100%;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  .Customer div * {
+    margin: 5px;
+  }
+  
+
+   
